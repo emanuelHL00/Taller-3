@@ -3,10 +3,11 @@ package co.edu.uniquindio.poo;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Hello and welcome!");
+        ComputadorFacade facade = new ComputadorFacade();
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        Computador pc = facade.construirComputador();
+
+        System.out.println("PC final creada: " + pc);
+        AlmacenComputadores.getInstancia().mostrarInventario();
     }
 }
