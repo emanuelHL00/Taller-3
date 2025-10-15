@@ -8,6 +8,6 @@ public class Main {
         Computador pc = facade.construirComputador();
 
         System.out.println("PC final creada: " + pc);
-        AlmacenComputadores.getInstancia().mostrarInventario();
+        AlmacenComputadores.getInstancia().mostrarComputadores();
     }
 }

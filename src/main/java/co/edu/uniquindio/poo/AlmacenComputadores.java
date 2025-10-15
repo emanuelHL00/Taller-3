@@ -20,8 +20,8 @@ public class AlmacenComputadores {
         listComputadores.add(pc);
     }
 
-    public void mostrarInventario() {
-        System.out.println("=== Inventario del Almacén ===");
+    public void mostrarComputadores() {
+        System.out.println("Computadores almacenados");
 
         if (listComputadores.isEmpty()) {
             System.out.println("No hay computadoras registradas.");
